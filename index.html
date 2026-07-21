@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>JavaShop</h1>
+    <button id="cartToggleBtn">Cart (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <main>
+    <section id="productSection">
+      <h2>Products</h2>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    <aside id="cartPanel" class="hidden">
+      <h2>Your Cart</h2>
+      <div id="cartItems"></div>
+      <p id="cartSubtotal"></p>
+      <button id="checkoutBtn">Checkout</button>
+      <div id="orderConfirmation"></div>
+    </aside>
+  </main>
+
+  <footer>
+    <button id="orderHistoryBtn">View Order History</button>
+    <div id="orderHistoryList"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

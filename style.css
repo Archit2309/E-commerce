@@ -1,0 +1,116 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+body { background: #f4f4f4; color: #222; }
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 { font-size: 22px; }
+
+#cartToggleBtn, #checkoutBtn, #orderHistoryBtn {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#cartToggleBtn:hover, #checkoutBtn:hover, #orderHistoryBtn:hover { background: #219150; }
+
+main { display: flex; gap: 20px; padding: 24px; }
+
+#productSection { flex: 3; }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.product-card h3 { font-size: 16px; margin-bottom: 6px; }
+.product-card p { font-size: 13px; color: #666; margin-bottom: 4px; }
+.product-card .price { font-weight: bold; color: #27ae60; margin: 8px 0; }
+
+.product-card input[type="number"] {
+  width: 50px;
+  padding: 4px;
+  margin-right: 8px;
+}
+
+.product-card button {
+  background: #2c3e50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#cartPanel {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  height: fit-content;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  min-width: 260px;
+}
+
+#cartPanel.hidden { display: none; }
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.cart-item button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+#cartSubtotal { font-weight: bold; margin: 12px 0; }
+
+#checkoutBtn { width: 100%; margin-bottom: 12px; }
+
+footer { padding: 24px; }
+
+#orderHistoryList { margin-top: 12px; }
+
+.order-entry {
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+
+#orderConfirmation {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #27ae60;
+}
